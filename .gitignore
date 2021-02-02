@@ -1,6 +1,9 @@
 /node_modules
 
 /input/*
+!/input/example.html
+
 /output/*
+!/output/example.json
 
 package-lock.json

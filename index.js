@@ -12,7 +12,7 @@ fs.readFile(`input/${input}`, 'utf8' , (err, data) => {
 
   const jsonTable = HtmlTableToJson.parse(data);
 
-  fs.writeFile(`output/${output}`, JSON.stringify(jsonTable.results), function (err) {
+  fs.writeFile(`output/${output}`, JSON.stringify(jsonTable.results, null, 2), function (err) {
     if (err) return console.log(err);
     console.log('success!');
   });
